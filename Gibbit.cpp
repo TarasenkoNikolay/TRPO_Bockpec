@@ -19,3 +19,24 @@ bool letterCheck(char word[], char c){
 	}
 	return false;
 }
+
+int countLetter(char word[]){
+	int N=sizeWord(word);
+	char newword[N+1];
+	bool check;
+	int m=0; int w=0;
+	
+	for (int i=0;i<N;i++){
+		check=false;
+		for(int j=0;j<N;j++){ 
+			if (word[i]==newword[j]) check=true;  
+		}
+		if (check==false) {
+			newword[m]=word[i];
+			m++;
+		}
+	}
+	
+
+	return w;
+}
