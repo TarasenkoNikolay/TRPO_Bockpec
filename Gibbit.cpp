@@ -37,6 +37,9 @@ int countLetter(char word[]){
 		}
 	}
 	
-
+	while(newword[w]!=0){
+		w++;
+	}
+	
 	return w;
 }
