@@ -43,3 +43,26 @@ int countLetter(char word[]){
 	
 	return w;
 }
+
+void errorLetter(int N, int error, char word[], char falseword[],char trueword[]) {
+	string errorGr[6]={ ("--"),("--O"),("--O-"),("--O-<"),("--O-<-"),("--O-<-<") };
+   	
+	char result[50];
+	
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
