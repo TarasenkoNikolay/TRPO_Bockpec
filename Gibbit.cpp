@@ -82,7 +82,7 @@ int main(){
 	char falseword[50]={0};
 	char trueword[50]={0};
     ifstream fin;
-	fin.open("c:/Temp/Kolya/TRPO_Bockpec/TRPO_Bockpec/words.txt");
+	fin.open("c:/Temp/Kolya/TRPO_Bockpec/words.txt");
 	fin >> word;
 	
 	int N=sizeWord(word);
