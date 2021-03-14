@@ -6,6 +6,7 @@
 #include <string.h>
 using namespace std;
 
+
 int sizeWord(char word[]){
 	int N=0;
 	while(word[N]!=0) N++;
@@ -40,7 +41,6 @@ int countLetter(char word[]){
 	while(newword[w]!=0){
 		w++;
 	}
-	
 	return w;
 }
 
@@ -82,7 +82,7 @@ int main(){
 	char falseword[50]={0};
 	char trueword[50]={0};
     ifstream fin;
-	fin.open("C:/Temp/Kolya/TRPO_Bockpec/words.txt");
+	fin.open("c:/Temp/Kolya/TRPO_Bockpec/TRPO_Bockpec/words.txt");
 	fin >> word;
 	
 	int N=sizeWord(word);
@@ -118,8 +118,7 @@ int main(){
 				falseword[fal]=c;
 				fal++;
 				error++;
-					
-				
+			
 			}
 		}
 		
@@ -131,16 +130,3 @@ int main(){
 	system("pause");
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
