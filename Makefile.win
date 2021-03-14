@@ -5,8 +5,8 @@ CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = TRPO_Bockpec/Gibbit.o $(RES)
-LINKOBJ  = TRPO_Bockpec/Gibbit.o $(RES)
+OBJ  = Gibbit.o $(RES)
+LINKOBJ  = Gibbit.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
@@ -26,5 +26,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o "Gibbit.exe" $(LIBS)
 
-TRPO_Bockpec/Gibbit.o: TRPO_Bockpec/Gibbit.cpp
-	$(CPP) -c TRPO_Bockpec/Gibbit.cpp -o TRPO_Bockpec/Gibbit.o $(CXXFLAGS)
+Gibbit.o: Gibbit.cpp
+	$(CPP) -c Gibbit.cpp -o Gibbit.o $(CXXFLAGS)
